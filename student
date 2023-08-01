@@ -1,0 +1,30 @@
+Prospective Student:
+
+Fields: First Name, Last Name, Date of Birth, Gender, Parent/Guardian Contact Information.
+Application:
+
+Fields: Student (Lookup to Prospective Student object), Application Date, Address, Previous School Information, Medical Information, Sibling Information (if applicable).
+Enrollment:
+
+Fields: Student (Lookup to Prospective Student object), Grade Level (e.g., 1st Grade, 2nd Grade), Enrollment Status (Enrolled, Withdrawn), Enrollment Date, Homeroom Teacher (Lookup to Teacher object).
+Student:
+
+Fields: First Name, Last Name, Date of Birth, Gender, Address, Parent/Guardian Contact Information, Medical Information.
+Teacher:
+
+Fields: First Name, Last Name, Email, Phone, Grade Level(s) Taught, Homeroom Class (Lookup to Enrollment object).
+Course:
+
+Fields: Course Name, Grade Level, Teacher (Lookup to Teacher object).
+Attendance:
+
+Fields: Student (Lookup to Student object), Course (Lookup to Course object), Attendance Date, Attendance Status (Present, Absent, Tardy).
+Communication Log:
+
+Fields: Student (Lookup to Student object), Date, Communication Type (Email, Phone Call, Meeting), Communication Details.
+Campaign:
+
+Fields: Campaign Name, Start Date, End Date, Description, Target Audience, Goals.
+Report Card:
+
+Fields: Student (Lookup to Student object), Grade Level, Grading Period, Courses Taken, Grades, Teacher Comments.
